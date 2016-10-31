@@ -16,6 +16,35 @@ Navigate to `IS-032` directory and symlink the data files (assuming you are on `
 
 `:~/IS-032$ ln -s /mnt/brick1/IS-032/data data`
 
+## Sample table
+
+| Sample ID | Name | Ab | Control |
+|-----------|------|----|---------|
+| skm01 | HepFLAG-WTS1-FLAG | FLAG | skm27 |
+| skm02 | HepFLAG-WTS1-RNAP | RNAP | skm27 |
+| skm03 | HepFLAG-WTS1-S9.6 | S9.6 | skm27 |
+| skm04 | HepFLAG-S1d56-FLAG | FLAG | skm28 |
+| skm05 | HepFLAG-S1d56-RNAP | RNAP | skm28 |
+| skm06 | HepFLAG-S1d56-S9.6 | S9.6 | skm28 |
+| skm07 | S1d56-HepFLAG-FLAG | FLAG | skm28 |
+| skm08 | S1d56-HepFLAG-RNAP | RNAP | skm28 |
+| skm09 | S1d56-HepFLAG-S9.6 | S9.6 | skm28 |
+| skm10 | S1FLAG-dHep-FLAG | FLAG | skm30 |
+| skm11 | S1FLAG-dHep-RNAP | RNAP | skm30 |
+| skm12 | S1FLAG-dHep-S9.6 | S9.6 | skm30 |
+| skm13 | Hep-FLAG_V-FLAG | FLAG | skm25 |
+| skm14 | Hep-FLAG_V-RNAP | RNAP | skm25 |
+| skm15 | Hep-FLAG_V-s9.6 | S9.6 | skm25 |
+| skm16 | Hep-FLAG_rnh-FLAG | FLAG | skm26 |
+| skm17 | Hep-FLAG_rnh-RNAP | RNAP | skm26 |
+| skm18 | Hep-FLAG_rnh-S9.6 | S9.6 | skm26 |
+| skm19 | S1-FLAG_V-FLAG | FLAG | skm25 |
+| skm20 | S1-FLAG_V-RNAP | RNAP | skm25 |
+| skm21 | S1-FLAG_V-S9.6 | S9.6 | skm25 |
+| skm22 | S1-FLAG_rnh-FLAG | FLAG | skm26 |
+| skm23 | S1-FLAG_rnh-RNAP | RNAP | skm26 |
+| skm24 | S1-FLAG_rnh-S9.6 | S9.6 | skm26 |
+
 ## Results
 
 Each subdirectory in `results` directory corresponds to a sample from the samples table and contains the output of `MACS2` for that sample:
