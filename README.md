@@ -1,20 +1,20 @@
-# IS-022
-ChIP-Seq analyses for IS-022 NextSeq run
+# IS-032
+ChIP-Seq analyses for IS-032 NextSeq run
 
 ## Setup
 Clone the repo:
 
-`$ git clone https://github.com/eco32i/IS-022.git`
+`$ git clone https://github.com/eco32i/IS-032.git`
 
-ONLY IF YOU HAVEN'T DONE THIS BEFORE: Navigate to `IS-022/scripts` and run the `bootstrap.sh` script that will install dependencies and setup Python 3 virtual environment called `pydata3` in `$HOME/.venv` and Python 2 virtual environment called `pydata2` in `$HOME/.virtualenvs`::
+ONLY IF YOU HAVEN'T DONE THIS BEFORE: Navigate to `IS-032/scripts` and run the `bootstrap.sh` script that will install dependencies and setup Python 3 virtual environment called `pydata3` in `$HOME/.venv` and Python 2 virtual environment called `pydata2` in `$HOME/.virtualenvs`::
 
 `$ ./bootstrap.sh --all`
 
 If you ran `bootstrap.sh` script from another repo (such as `IS-017`) then your python virtualenvs are all set up and you can copy the data files and go directly to running notebooks section below.
 
-Navigate to `IS-022` directory and symlink the data files (assuming you are on `snowflake`):
+Navigate to `IS-032` directory and symlink the data files (assuming you are on `snowflake`):
 
-`:~/IS-022$ ln -s /mnt/brick2/IS-022/data data`
+`:~/IS-032$ ln -s /mnt/brick1/IS-032/data data`
 
 ## Results
 
@@ -23,10 +23,11 @@ Each subdirectory in `results` directory corresponds to a sample from the sample
 * `{sample_id}_peaks.NarrowPeak` - coordinates of peaks 
 * `{sample_id}_peaks.xls` - `.csv` file with statistics on each peak, can be loaded into a spreadsheet program directly  
 * `{sample_id}_summits.bed` - `.bed` file with coordinates of summits for called peaks.
+* `{sample_id}.cm.csv` - coverage matrix (as `.csv` file) for `TSS` plots. See `src/TSS_plots.ipynb` for details.
 
 ## Running notebooks
 
-The analyses are organized into several `jupyter` notebooks. To launch the notebook, navigate to `IS-022/src` directory and activate `pydata3` environment:
+The analyses are organized into several `jupyter` notebooks. To launch the notebook, navigate to `IS-032/src` directory and activate `pydata3` environment:
 
 ```bash
 $ source ~/.venv/pydata3/bin/activate
